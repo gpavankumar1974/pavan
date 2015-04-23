@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Test Suite">
+
+
+	<test name="Demo Tests Using IE" preserve-order="true">
+		<parameter name="browser" value="IE" />
+		<classes>
+			<class name="com.tests.DataDriverTestClass1" />
+		</classes>
+	</test>
+
+	<test name="Demo Tests Using Chrome" preserve-order="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.tests.DataDriverTestClass2" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="atu.testng.reports.listeners.ATUReportsListener">
+		</listener>
+		<listener class-name="atu.testng.reports.listeners.ConfigurationListener">
+		</listener>
+		<listener class-name="atu.testng.reports.listeners.MethodListener">
+		</listener>
+	</listeners>
+
+</suite>
