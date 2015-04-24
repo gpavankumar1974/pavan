@@ -91,7 +91,7 @@
 		<copy todir="G:/ITS/QA/Selenium/Test_Results/DemoProject/XSLT_Reports">
 			<fileset dir="${home}/XSLT_Reports/output" includes="**" />
 		</copy>
-
+		<!--
 		<mail mailhost="smtp.gmail.com" mailport="465" password="Abcdef1!" ssl="true" subject="Reports for Demo Project" user="cpg.testresult@gmail.com">
 			<from address="cpg.testresult@gmail.com">
 			</from>
@@ -107,5 +107,6 @@
 			
 			</message>
 		</mail>
+		-->
 	</target>
 </project>
