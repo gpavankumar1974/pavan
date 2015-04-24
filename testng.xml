@@ -17,6 +17,13 @@
 		</classes>
 	</test>
 
+	<test name="Demo Tests Using FireFox" preserve-order="true">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.tests.DataDriverTestClass2" />
+		</classes>
+	</test>
+
 	<listeners>
 		<listener class-name="atu.testng.reports.listeners.ATUReportsListener">
 		</listener>
