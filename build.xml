@@ -36,11 +36,11 @@
 	<!-- compile -->
 	<target name="compile" depends="init, clean">
 		<delete includeemptydirs="true" quiet="true">
-			<fileset dir="C:/Users/shaider/git/Test_Results/DemoProject/XSLT_Reports" includes="**/*" />
+			<fileset dir="C:/Users/Home/Desktop/Test_Results/DemoProject/XSLT_Reports" includes="**/*" />
 		</delete>
 
 		<delete includeemptydirs="true" quiet="true">
-			<fileset dir="C:/Users/shaider/git/Test_Results/DemoProject/ATU_Reports" includes="**/*" />
+			<fileset dir="C:/Users/Home/Desktop/Test_Results/DemoProject/ATU_Reports" includes="**/*" />
 		</delete>
 
 		<delete includeemptydirs="true" quiet="true">
@@ -84,11 +84,11 @@
 	-->
 	<target description="Generates and send TestNG test reports" name="send-report" depends="run, makexsltreports">
 
-		<copy todir="C:/Users/shaider/git/Test_Results/DemoProject/ATU_Reports">
+		<copy todir="C:/Users/Home/Desktop/Test_Results/DemoProject/ATU_Reports">
 			<fileset dir="${home}/ATU_Reports" includes="**" />
 		</copy>
 
-		<copy todir="C:/Users/shaider/git/Test_Results/DemoProject/XSLT_Reports">
+		<copy todir="C:/Users/Home/Desktop/Test_Results/DemoProject/XSLT_Reports">
 			<fileset dir="${home}/XSLT_Reports/output" includes="**" />
 		</copy>
 	</target>
