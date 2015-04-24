@@ -84,13 +84,13 @@
 	-->
 	<target description="Generates and send TestNG test reports" name="send-report" depends="run, makexsltreports">
 
-		<copy todir="G:/ITS/QA/Selenium/Test_Results/DemoProject/ATU_Reports">
+		<copy todir="C:/Users/Home/Desktop/Test_Results/DemoProject/ATU_Reports">
 			<fileset dir="${home}/ATU_Reports" includes="**" />
 		</copy>
 
-		<copy todir="G:/ITS/QA/Selenium/Test_Results/DemoProject/XSLT_Reports">
+		<copy todir="C:/Users/Home/Desktop/Test_Results/DemoProject/XSLT_Reports">
 			<fileset dir="${home}/XSLT_Reports/output" includes="**" />
 		</copy>
-
 	</target>
+	
 </project>
