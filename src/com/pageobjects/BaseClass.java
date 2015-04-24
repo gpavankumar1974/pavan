@@ -32,7 +32,7 @@ public class BaseClass {
 		if (System.getProperties().getProperty("os.name").toLowerCase()
 				.contains("windows")) {
 			System.setProperty("atu.reporter.config",
-					"C:\\Users\\shaider\\\\workspace\\Demo\\atu.properties");
+					"C:\\Users\\Home\\git\\Demo\\atu.properties");
 		}
 	}
 
@@ -95,7 +95,7 @@ public class BaseClass {
 					InternetExplorerDriver.INITIAL_BROWSER_URL, "about:blank");
 
 			System.setProperty("webdriver.ie.driver",
-					"C:\\Users\\shaider\\workspace\\Demo\\\\IEDriverServer.exe");
+					"C:\\Users\\Home\\git\\Demo\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver(capabilities);
 		}
 
@@ -106,7 +106,7 @@ public class BaseClass {
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\shaider\\workspace\\Demo\\chromedriver.exe");
+					"C:\\Users\\Home\\git\\Demo\\chromedriver.exe");
 			driver = new ChromeDriver(capabilities);
 		}
 
