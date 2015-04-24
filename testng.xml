@@ -6,6 +6,13 @@
 	<test name="Demo Tests Using IE" preserve-order="true">
 		<parameter name="browser" value="IE" />
 		<classes>
+			<class name="com.tests.NonDataDriverTestClass1" />
+		</classes>
+	</test>
+	<!--
+	<test name="Demo Tests Using IE" preserve-order="true">
+		<parameter name="browser" value="IE" />
+		<classes>
 			<class name="com.tests.DataDriverTestClass1" />
 		</classes>
 	</test>
@@ -23,6 +30,8 @@
 			<class name="com.tests.DataDriverTestClass2" />
 		</classes>
 	</test>
+
+	-->
 
 	<listeners>
 		<listener class-name="atu.testng.reports.listeners.ATUReportsListener">
