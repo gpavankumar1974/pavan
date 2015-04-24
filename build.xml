@@ -36,11 +36,11 @@
 	<!-- compile -->
 	<target name="compile" depends="init, clean">
 		<delete includeemptydirs="true" quiet="true">
-			<fileset dir="G:/ITS/QA/Selenium/Test_Results/DemoProject/XSLT_Reports" includes="**/*" />
+			<fileset dir="C:/Users/Home/Desktop/Test_Results/DemoProject/XSLT_Reports" includes="**/*" />
 		</delete>
 
 		<delete includeemptydirs="true" quiet="true">
-			<fileset dir="G:/ITS/QA/Selenium/Test_Results/DemoProject/ATU_Reports" includes="**/*" />
+			<fileset dir="C:/Users/Home/Desktop/Test_Results/DemoProject/ATU_Reports" includes="**/*" />
 		</delete>
 
 		<delete includeemptydirs="true" quiet="true">
@@ -48,8 +48,8 @@
 		</delete>
 		<echo message="making directory..." />
 		<mkdir dir="${build}" />
-		<mkdir dir="G:/ITS/QA/Selenium/Test_Results/DemoProject/XSLT_Reports" />
-		<mkdir dir="G:/ITS/QA/Selenium/Test_Results/DemoProject/ATU_Reports" />
+		<mkdir dir="C:/Users/Home/Desktop/Test_Results/DemoProject/XSLT_Reports" />
+		<mkdir dir="C:/Users/Home/Desktop/Test_Results/DemoProject/ATU_Reports" />
 		<echo message="classpath------: ${test.classpath}" />
 		<echo message="compiling..." />
 		<javac debug="true" destdir="${build}" srcdir="${src}" target="1.8" classpath="${test.classpath}">
@@ -91,22 +91,6 @@
 		<copy todir="G:/ITS/QA/Selenium/Test_Results/DemoProject/XSLT_Reports">
 			<fileset dir="${home}/XSLT_Reports/output" includes="**" />
 		</copy>
-		<!--
-		<mail mailhost="smtp.gmail.com" mailport="465" password="Abcdef1!" ssl="true" subject="Reports for Demo Project" user="cpg.testresult@gmail.com">
-			<from address="cpg.testresult@gmail.com">
-			</from>
-			<replyto address="shaider@cpg.org">
-			</replyto>
-			<to address="shaider@cpg.org">
-			</to>
-			<message> Regression for Demo Project Has Finised. Click Below links For Results:
-				
-				ATU Format: G:/ITS/QA/Selenium/Test_Results/DemoProject/ATU_Reports/index.html
-				and
-				XSLT formats: G:/ITS/QA/Selenium/Test_Results/DemoProject/XSLT_Reports/index.html
-			
-			</message>
-		</mail>
-		-->
+
 	</target>
 </project>
